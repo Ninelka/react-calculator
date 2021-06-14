@@ -1,0 +1,43 @@
+.buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 5px;
+
+	&__item {
+		min-height: 50px;
+		background-color: grey;
+		color: white;
+		border: none;
+		border-radius: 4px;
+		font-family: "Digital", arial;
+		font-size: 1.5em;
+
+		&:hover {
+			outline: -webkit-focus-ring-color auto 1px;
+			cursor: pointer;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&_clear {
+			background-color: #ff6767;
+		}
+
+		&_equals {
+			grid-row-start: span 2;
+			background-color: #52c189;
+		}
+
+		&_clear,
+		&_zero {
+			grid-column-start: span 2;
+		}
+
+		&_numbers {
+			background-color: rgba(grey, 0.7);
+		}
+	}
+}
