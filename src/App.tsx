@@ -33,7 +33,7 @@ const App: React.FC = () => {
   }
 
   const handleEvaluate = (): void => {
-    if (!currentVal.includes('Limit')) {
+    if (formula && !currentVal.includes('Limit')) {
       let expression = formula;
 
       while (endsWithOperator.test(expression)) {
