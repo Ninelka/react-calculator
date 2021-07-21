@@ -6,12 +6,10 @@ type MyProps = {
     formula: string;
 };
 
-class Input extends React.Component<MyProps> {
-    render() {
-        return (
-            <div className="input">{this.props.formula}</div>
-        )
-    }
+function Input(props: MyProps) {
+    return (
+        <div className="input">{props.formula}</div>
+    )
 }
 
 export default Input

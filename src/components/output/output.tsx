@@ -5,12 +5,10 @@ type MyProps = {
     currentValue: string;
 };
 
-class Output extends React.Component<MyProps> {
-    render() {
-        return (
-            <div className="output" id="display">{this.props.currentValue}</div>
-        )
-    }
+function Output(props: MyProps) {
+    return (
+        <div className="output" id="display">{props.currentValue}</div>
+    )
 }
 
 export default Output
