@@ -1,4 +1,6 @@
 .container {
+	display: grid;
+	grid-gap: 5px;
 	width: 250px;
 	background-color: black;
 	padding: 1em;

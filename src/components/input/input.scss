@@ -1,6 +1,7 @@
 .input {
+	grid-column: 1/ span 4;
 	text-align: right;
-	font-family: "Digital", arial;
+	font-family: "Digital", arial, sans-serif;
 	overflow: hidden;
 	min-height: 36px;
 	color: red;
